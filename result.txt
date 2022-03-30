@@ -1,0 +1,45 @@
+#Aierken shalayiding
+PS C:\Users\salay\Desktop\RIT_Class_2\655\G_Project> python .\learn.py
+2022-03-30 02:35:44.705573: W tensorflow/stream_executor/platform/default/dso_loader.cc:64] Could not load dynamic library 'cudart64_110.dll'; dlerror: cudart64_110.dll not found
+2022-03-30 02:35:44.705964: I tensorflow/stream_executor/cuda/cudart_stub.cc:29] Ignore above cudart dlerror if you do not have a GPU set up on your machine.
+2022-03-30 02:35:47.700129: W tensorflow/stream_executor/platform/default/dso_loader.cc:64] Could not load dynamic library 'cudart64_110.dll'; dlerror: cudart64_110.dll not found
+2022-03-30 02:35:47.701686: W tensorflow/stream_executor/platform/default/dso_loader.cc:64] Could not load dynamic library 'cublas64_11.dll'; dlerror: cublas64_11.dll not found
+2022-03-30 02:35:47.703274: W tensorflow/stream_executor/platform/default/dso_loader.cc:64] Could not load dynamic library 'cublasLt64_11.dll'; dlerror: cublasLt64_11.dll not found
+2022-03-30 02:35:47.705036: W tensorflow/stream_executor/platform/default/dso_loader.cc:64] Could not load dynamic library 'cufft64_10.dll'; dlerror: cufft64_10.dll not found
+2022-03-30 02:35:47.706712: W tensorflow/stream_executor/platform/default/dso_loader.cc:64] Could not load dynamic library 'curand64_10.dll'; dlerror: curand64_10.dll not found
+2022-03-30 02:35:47.708364: W tensorflow/stream_executor/platform/default/dso_loader.cc:64] Could not load dynamic library 'cusolver64_11.dll'; dlerror: cusolver64_11.dll not found
+2022-03-30 02:35:47.710198: W tensorflow/stream_executor/platform/default/dso_loader.cc:64] Could not load dynamic library 'cusparse64_11.dll'; dlerror: cusparse64_11.dll not found
+2022-03-30 02:35:47.711903: W tensorflow/stream_executor/platform/default/dso_loader.cc:64] Could not load dynamic library 'cudnn64_8.dll'; dlerror: cudnn64_8.dll not found
+2022-03-30 02:35:47.712356: W tensorflow/core/common_runtime/gpu/gpu_device.cc:1850] Cannot dlopen some GPU libraries. Please make sure the missing libraries mentioned above are installed properly if you would like to use GPU. Follow the guide at https://www.tensorflow.org/install/gpu for how to download and setup the required libraries for your platform.
+Skipping registering GPU devices...
+2022-03-30 02:35:47.713466: I tensorflow/core/platform/cpu_feature_guard.cc:151] This TensorFlow binary is optimized with oneAPI Deep Neural Network Library (oneDNN) to use the following CPU instructions in performance-critical operations:  AVX AVX2
+To enable them in other operations, rebuild TensorFlow with the appropriate compiler flags.
+Model: "sequential"
+_________________________________________________________________
+ Layer (type)                Output Shape              Param #
+=================================================================
+ conv2d (Conv2D)             (None, 8, 8, 128)         1280
+
+ flatten (Flatten)           (None, 8192)              0
+
+ dense (Dense)               (None, 128)               1048704
+
+ dense_1 (Dense)             (None, 64)                8256
+
+ dense_2 (Dense)             (None, 32)                2080
+
+ dense_3 (Dense)             (None, 16)                528
+
+ dense_4 (Dense)             (None, 8)                 136
+
+ dense_5 (Dense)             (None, 1)                 9
+
+=================================================================
+Total params: 1,060,993
+Trainable params: 1,060,993
+Non-trainable params: 0
+_________________________________________________________________
+Total number of test data  5474
+Total number of correct prediction 5374
+Total number of incorrect prediction 100
+Accuracy for test data set 98.17318231640483
